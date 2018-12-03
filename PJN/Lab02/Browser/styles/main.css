@@ -1,0 +1,165 @@
+* {
+	margin: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	border: none;
+	list-style: none;
+	padding: 0;
+}
+
+body {
+	font-size: 14px;
+}
+
+
+h1, h2, h3, h4, h5, h6, p {
+	font-family: "Open Sans";
+	color: #000;
+}
+
+h1 {
+	font-size: 2.2em;
+}
+
+p {
+	font-size: 1.0em;
+}
+
+header {
+	display: block;
+	width: 400px;
+	margin: 10px auto;
+	padding 10px;
+	text-align: center;
+}
+
+#form-searchbox {
+	display: block;
+	width: 500px;
+	margin: 20px auto;
+	padding: 10px;
+	background: #f3f3f3;
+	text-align: center;
+	padding: 20px;
+}
+
+#form-search {
+	display: flex;
+	flex-direction: column;
+	flex-basis: auto;
+	width: 450px;
+	margin: 5px auto;
+}
+
+
+.search-field {
+	flex-direction: column;
+	margin: 20px;
+}
+
+.search-field input[type="search"] {
+	width: 300px;
+	height: 30px;
+	background-color: #fefefe;
+	padding: 3px 10px;
+	color: #000000;
+	border: 1px solid #176c93;
+}
+
+.search-field input[type="button"] {
+	width: 90px;
+	height: 30px;
+	background: #176c93;
+	color: #fff;
+	letter-spacing: 0.03em;
+	text-transform: capitalize;
+	cursor: pointer;
+}
+
+.cb-group {
+	display: block;
+	width: 300px;
+	align-self: flex-start;
+	height: 25px;
+	text-align: left;
+}
+
+.cb-group label{
+	color: #176c93;
+	line-height: 20px;
+}
+
+.cb-group input[type="checkbox"] {
+	
+}
+
+.cb-group input[type="number"] {
+	border: 1px solid #176c93;
+	padding: 3px;
+	width: 70px;
+	height: 19px;
+	margin-left: 20px;
+	background: #ffffff;
+}
+
+.cb-group input[type="number"]:disabled {
+	background: #aaaaaa;
+}
+
+#result-info {
+	display: block;
+	width: 500px;
+	margin: 20px auto;
+	padding: 10px;
+	
+} 
+
+#result-info p {
+	font-size: 0.8em;
+	color: #cccccc;
+	width: 100%;
+	text-align: right;
+}
+
+#result-list {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin: 50px auto;
+}
+
+.listitem {
+	display: flex;
+	width: 90%;
+	margin: 10px auto;
+}
+
+.listitem .left-box {
+	width: 80%;
+	flex-direction: row;
+}
+
+.listitem .left-box h2 {
+	color: #444444;
+	cursor: pointer;
+	font-size: 1.2em;
+}
+
+.listitem .left-box:hover h2 {
+	color: #000000;
+}
+
+
+.listitem .left-box p {
+	color: #aaaaaa;
+}
+
+.listitem .right-box {
+	width: 20%;
+	flex-direction: row;
+}
+
+.listitem .right-box p {
+	color: #aaaaaa;
+}

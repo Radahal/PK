@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Search - Rafal Gosiewski, Julia Guzik</title>
+		<script src="scripts/js/jquery-3.3.1.min.js"></script>
+		<script src="scripts/js/form.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="styles/main.css">
+	</head>
+	<body>
+		<header>
+			<h2>Search</h2>
+			<p>Search in our base of Wiki articles</p>	
+		</header>
+		<section id="form-searchbox">
+			<form id="form-search" name="form-search">
+				<div class="search-field">
+					<input type="search" id="searchfield" name="searchfield" />
+					<input type="button" id="btn" name="search_btn" value="Search" />
+				</div>
+				<div class="cb-group">
+					<input type="checkbox" name="lemma" />
+					<label>Lemmatize</label>
+				</div>
+				<div class="cb-group">
+					<input type="checkbox" name="stopwords" />
+					<label>Stop words</label>
+					<input type="number" id="stopwords_val" min="1" name="stopwords_val" disabled/>
+				</div>
+			</form>
+		</section>
+		<section id="result-info">
+			<p>Found <span id="counter"></span> articles </p>
+		</section>
+		<section id="result-list">
+			
+		</section>
+	</body>
+</html>
